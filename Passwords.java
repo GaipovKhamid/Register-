@@ -1,6 +1,6 @@
 public class Passwords {
     public int password=1515;
-    public String name="gaipov";
+    public int name = "1666";
 
     public Passwords(int password){
         this.password = password;

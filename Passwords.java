@@ -1,6 +1,6 @@
 public class Passwords {
     public int password=1515;
-    public int name = "1666";
+    public int name = 1666;
 
     public Passwords(int password){
         this.password = password;
@@ -16,11 +16,11 @@ public class Passwords {
         this.password = password;
     }
 
-    public String getName() {
+    public int getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(int name) {
         this.name = name;
     }
 }

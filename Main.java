@@ -8,16 +8,20 @@ public class Main {
 
         System.out.print("Введите login: ");
         Scanner login = new Scanner(System.in);
-        String loggin = login.nextInt();
+        int loggin = login.nextInt();
 
-        if(loggin === name){
+        if(loggin == name){
             System.out.print("Введите password: ");
             Scanner psw = new Scanner(System.in);
-            int pass = psw.nextInt();  
-            if(pass === passw){
-                System.out.println("Ok, go to site")
-            }          
+            int pass = psw.nextInt();
+            if(pass == passw){
+                System.out.println("Ok, go to site");
+            }else {
+                System.out.println("Xato parol");
+            }
+        }else{
+            System.out.println("Xato login");
         }
-            
+
     }
 }

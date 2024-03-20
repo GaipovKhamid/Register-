@@ -3,23 +3,24 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Passwords password = new Passwords();
+
         int passw = password.getPassword();
-        int name = password.getName();
+        String name = password.getName();
 
         System.out.print("Введите login: ");
         Scanner login = new Scanner(System.in);
-        int loggin = login.nextInt();
-
-        if(loggin == name){
+        String loggin = login.next();
+        if (loggin.equals(name)){
             System.out.print("Введите password: ");
             Scanner psw = new Scanner(System.in);
             int pass = psw.nextInt();
-            if(pass == passw){
+
+            if (pass == passw) {
                 System.out.println("Ok, go to site");
-            }else {
+            } else {
                 System.out.println("Xato parol");
             }
-        }else{
+        } else {
             System.out.println("Xato login");
         }
 
